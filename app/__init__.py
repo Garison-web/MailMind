@@ -1,0 +1,1 @@
+"""MailMind application package."""

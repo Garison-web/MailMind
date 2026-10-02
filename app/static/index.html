@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MailMind — Email Triage</title>
+    <meta
+      name="description"
+      content="MailMind helps you triage email, understand what matters, and draft a clear response."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/static/style.css?v=mailmind-20261002" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div class="brand-wrap">
+          <a href="#" class="brand" aria-label="MailMind home">
+            <span class="brand-mark">✦</span>
+            <span class="brand-text">MailMind</span>
+          </a>
+        </div>
+
+        <div class="topbar-actions">
+          <span class="status-pill"><i></i> Explainable AI triage</span>
+          <button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle dark mode">
+            <span class="theme-icon" aria-hidden="true">☾</span>
+          </button>
+        </div>
+      </header>
+
+      <main class="dashboard">
+        <section class="panel compose-panel" aria-labelledby="compose-title">
+          <div class="panel-header">
+            <div>
+              <p class="eyebrow">Compose</p>
+              <h1 id="compose-title">Know what matters. <em>Reply with clarity.</em></h1>
+            </div>
+          </div>
+
+          <p class="subhead">Prioritize the signal, understand the reasoning, and reply with confidence.</p>
+
+          <div class="action-row">
+            <div class="demo-title-cell">
+              <span class="section-label">Demo emails</span>
+            </div>
+            <div class="gmail-actions">
+              <button id="gmailBtn" class="secondary-btn" type="button">Fetch inbox</button>
+              <button id="gmailSwitchBtn" class="secondary-btn" type="button" hidden>Switch account</button>
+            </div>
+          </div>
+
+          <div id="sampleMenu" class="sample-menu" aria-label="Email samples"></div>
+
+          <form class="compose-form" aria-label="Email triage form">
+            <div class="field-group">
+              <label for="subject">Subject</label>
+              <input id="subject" name="subject" type="text" value="Interview Confirmation – Data Science Internship" maxlength="300" />
+            </div>
+
+            <div class="field-group">
+              <label for="body">Email content</label>
+              <textarea id="body" name="body" rows="12">Dear Satyam,
+
+Your interview for the Data Science Internship has been scheduled for tomorrow at 11:00 AM. Please confirm your availability by 6 PM today.
+
+Regards,
+Campus Recruitment Team</textarea>
+            </div>
+          </form>
+
+          <button id="analyze" class="primary-btn" type="button">
+            <span class="btn-label">Analyze email</span>
+            <span class="btn-arrow" aria-hidden="true">→</span>
+          </button>
+
+          <p class="privacy-note">✦ Your draft stays in this browser. Live AI is optional.</p>
+        </section>
+
+        <section id="results" class="results-panel" aria-live="polite" aria-label="Analysis results"></section>
+      </main>
+    </div>
+
+    <div id="copyToast" class="toast" role="status" aria-live="polite">Copied ✓</div>
+
+    <script src="/static/app.js?v=mailmind-20261002-account-switch"></script>
+  </body>
+</html>

@@ -1,0 +1,6 @@
+[
+  {"name":"Interview confirmation","subject":"Interview Confirmation – Data Science Internship","body":"Dear Satyam,\n\nYour interview for the Data Science Internship has been scheduled for tomorrow at 11:00 AM. Please confirm your availability by 6 PM today.\n\nRegards,\nCampus Recruitment Team"},
+  {"name":"Payment reminder","subject":"Invoice #4821 requires attention","body":"Hello Satyam,\n\nThis is a reminder that invoice #4821 is due by Friday. Please review and submit payment to avoid a service interruption.\n\nThanks,\nAcme Billing"},
+  {"name":"Critical security alert","subject":"Action required: account security alert","body":"Hello Satyam,\n\nWe detected a potentially compromised account. Reset your password immediately and reply by 3 PM today if you need assistance.\n\nSecurity Operations"},
+  {"name":"Class update","subject":"NLP class materials","body":"Hi everyone,\n\nThe slides from today's NLP class are now available. Please review them before next week's discussion.\n\nBest,\nProfessor Rao"}
+]
